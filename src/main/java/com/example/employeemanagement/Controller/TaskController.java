@@ -44,7 +44,7 @@ public class TaskController {
         return taskService.getEmployeeTasks(employeeEmail);
     }
 
-    @GetMapping("${TASK_GET_BY_ID&EMAIL_PATH}")
+    @GetMapping("${TASK_GET_BY_ID_AND_EMAIL_PATH}")
     public ResponseEntity<?> getEmployeeSingleTask(@PathVariable("id") int id,@PathVariable("email") String employeeEmail){
         return taskService.getEmployeeSingleTask(id,employeeEmail);
     }
