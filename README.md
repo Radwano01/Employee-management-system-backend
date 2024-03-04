@@ -13,11 +13,13 @@ Entity Classes:
   Level: Indicates employee experience (e.g., Junior, Senior)
   Task: Tracks assigned tasks to employees - (Supports CRUD operations)
   Admin: Stores admin credentials (username, hashed password)
+  
 Controller Classes:
   EmployeeController: Handles employee-related API endpoints (CRUD operations)
   FieldController: Manages field-related functionalities (CRUD operations supported)
   TaskController: Handles task-related functionalities (CRUD operations supported) - (Manages task creation, reading, updating, and deletion)
   AdminController: Manages admin functionalities (authentication, etc.)
+  
 Service Classes:
   EmployeeService: Provides business logic for employee management
   FieldService: Handles field-specific operations (CRUD operations supported)
