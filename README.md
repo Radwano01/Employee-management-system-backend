@@ -6,6 +6,7 @@ Project Structure:
 
 The project adheres to a well-defined structure, promoting maintainability and clarity:
 
+
 Entity Classes:
 
   Employee: Represents employee data (name, surname, email, salary, etc.)
@@ -14,6 +15,7 @@ Entity Classes:
   Level: Indicates employee experience (e.g., Junior, Senior)
   Task: Tracks assigned tasks to employees - (Supports CRUD operations)
   Admin: Stores admin credentials (username, hashed password)
+
   
 Controller Classes:
 
@@ -29,6 +31,7 @@ Service Classes:
   TaskService: Provides business logic for creating, assigning, and managing tasks - (Handles CRUD operations for tasks)
   AdminService: Handles admin-specific operations
 
+
 Features:
 
   Employee Management:
@@ -36,6 +39,7 @@ Features:
   Create, read, update, and delete employee records
   Associate employees with fields, roles, and levels
   Secured access using Spring Security
+
   
   Field Management:
   
@@ -43,6 +47,7 @@ Features:
   Read (get) existing fields and their details
   Update (edit) existing fields
   Delete fields (ensure no employees are associated before deletion)
+
   
   Task Management:
   
@@ -50,6 +55,7 @@ Features:
   Read existing tasks and their details
   Update task details (e.g., status, priority)
   Delete completed or no longer relevant tasks
+
 
 Technologies:
 
