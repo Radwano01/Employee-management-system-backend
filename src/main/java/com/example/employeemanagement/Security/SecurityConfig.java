@@ -64,13 +64,4 @@ public class SecurityConfig {
         return new JWTAuthenticationFilter();
     }
 
-
-
-    @Bean
-    CommandLineRunner commandLineRunner(AdminRepository adminRepository){
-        return args -> {
-            AdminEntity admin = new AdminEntity("admin", passwordEncoder().encode("adminpassword"), "ADMIN");
-            adminRepository.save(admin);
-        };
-    }
 }
