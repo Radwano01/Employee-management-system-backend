@@ -7,6 +7,7 @@ Project Structure:
 The project adheres to a well-defined structure, promoting maintainability and clarity:
 
 Entity Classes:
+
   Employee: Represents employee data (name, surname, email, salary, etc.)
   Field: Categorizes employee expertise (e.g., Software Development, Marketing) - CRUD operations supported
   Role: Defines employee responsibilities (e.g., Developer, Manager)
@@ -15,37 +16,43 @@ Entity Classes:
   Admin: Stores admin credentials (username, hashed password)
   
 Controller Classes:
+
   EmployeeController: Handles employee-related API endpoints (CRUD operations)
   FieldController: Manages field-related functionalities (CRUD operations supported)
   TaskController: Handles task-related functionalities (CRUD operations supported) - (Manages task creation, reading, updating, and deletion)
   AdminController: Manages admin functionalities (authentication, etc.)
   
 Service Classes:
+
   EmployeeService: Provides business logic for employee management
   FieldService: Handles field-specific operations (CRUD operations supported)
   TaskService: Provides business logic for creating, assigning, and managing tasks - (Handles CRUD operations for tasks)
   AdminService: Handles admin-specific operations
 
-  Features:
+Features:
 
-Employee Management:
+  Employee Management:
+  
   Create, read, update, and delete employee records
   Associate employees with fields, roles, and levels
   Secured access using Spring Security
   
-Field Management:
+  Field Management:
+  
   Create (add) new fields (e.g., Software Development, Marketing)
   Read (get) existing fields and their details
   Update (edit) existing fields
   Delete fields (ensure no employees are associated before deletion)
-
-Task Management:
+  
+  Task Management:
+  
   Create new tasks and assign them to employees
   Read existing tasks and their details
   Update task details (e.g., status, priority)
   Delete completed or no longer relevant tasks
 
 Technologies:
+
   Java
   Spring Boot
   Spring Security
